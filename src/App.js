@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 
+const h2Style= {
+  color: 'orange',
+  background: 'green',
+  textAlign: 'center',
+  fontSize: '18px'
+};
+// los estilos en linea de los componentes se pasan únicamente en formato de objetos y con nombre de atributos en camelcase.
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      
+      <NavBar/>
+      
+      <ItemListContainer style={h2Style} greeting={"Hola!!! buenos días!! Bienvenido a nuestro E-Comosano!!"}/>
+    </>
   );
 }
-
 export default App;
