@@ -1,5 +1,4 @@
-// import React from 'react';
-import { useState } from "react";
+import React from 'react';
 import './NavBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmarkSquare } from '@fortawesome/free-solid-svg-icons';
@@ -8,7 +7,8 @@ import CartWidget from './CartWidget';
 import Logo from '../images/logo.png';
 import LogoWhite from '../images/logoWhite.png';
 
-const NavigationBar = ({ visible }) => (
+
+const NavigationBar = ({ visible }) => ( 
     <div id="navbar__menu" className={visible ? 'slideIn swing' : 'slideOut'} >
         <ul>
             <li className='navbar__menu--buy'>Compra por   WhatsApp
@@ -23,9 +23,6 @@ const NavigationBar = ({ visible }) => (
             <li className='navbar__menu--aboutUs'>Acerca de nosotros
                 {/* <a href="/"></a> */}
             </li>
-            <li className = 'navbar__menu--aboutUs'>Acerca de nosotros repetidos
-                
-            </li>
         </ul>
         <div className='menuLogo'>
             <img className="logoWhite" src={LogoWhite} alt="COMOSANO" />
@@ -33,22 +30,31 @@ const NavigationBar = ({ visible }) => (
     </div>
 );
 
-function NavBar (){
-    const [ visibility , setVisibility ] = useState(false);
-    const handleClick = ()=>{ setVisibility(!visibility)
-
+class NavBar extends React.Component {
+    constructor(props) {
+        super(props)
+        this.handleClick = this.handleClick.bind(this)
+        this.state = { visible: false }
     }
-    return(
-        <div id="NavBar">
+
+    handleClick() {
+        this.setState(prev => ({ visible: !prev.visible }))
+    }
+    
+    render() {
+        return (            
+            <div id="NavBar">
                 <div className="nbContainer">
                     <img className="logo" src={Logo} alt="COMOSANO"/>
                     <CartWidget className="cart"/>
-                    <button className="btnMenu" type="button" onClick={handleClick}>
-                        {visibility ? <FontAwesomeIcon icon={faXmarkSquare} size="2x" color="green"/> : <FontAwesomeIcon icon={faBars} size="2x" color="green"/>}
+                    <button className="btnMenu" type="button" onClick={this.handleClick}>
+                        {this.state.visible ? <FontAwesomeIcon icon={faXmarkSquare} size="2x" color="green"/> : <FontAwesomeIcon icon={faBars} size="2x" color="green"/>}
                     </button>
                 </div>
-                <NavigationBar visible={visibility}/>
+                <NavigationBar visible={this.state.visible}/>
             </div>
-    )
-}
+        )
+    }
+};
 export default NavBar;
+
