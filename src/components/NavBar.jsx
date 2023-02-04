@@ -20,10 +20,14 @@ const NavigationBar = ({ visible }) => (
             <li className='navbar__menu--prodList'>Productos
                 {/* <a href="/"></a> */}
             </li>
+            <li className='navbar__menu--prodList'>Comprar
+                {/* <a href="/"></a> */}
+            </li>
             <li className='navbar__menu--aboutUs'>Acerca de nosotros
                 {/* <a href="/"></a> */}
             </li>
-            <li className = 'navbar__menu--aboutUs'>Acerca de nosotros repetidos
+            <li className = 'navbar__menu--aboutUs'>
+                Acerca de nosotros repetidos
                 
             </li>
         </ul>

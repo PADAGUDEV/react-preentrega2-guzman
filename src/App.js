@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+import { EstadosPorEfectos } from './components/ItemCount';
 
 const h2Style= {
   color: 'orange',
@@ -16,6 +17,7 @@ function App() {
       <NavBar/>
       
       <ItemListContainer style={h2Style} greeting={"Hola!!! buenos días!! Bienvenido a nuestro E-Comosano!!"}/>
+      <EstadosPorEfectos/>
     </>
   );
 }
