@@ -1,19 +1,24 @@
 import products from '../products.json';
 import { ShowList } from './ShowList';
+console.log(products)
+console.log(products[0].list)
 
 export const ShowSection = ()=>{
 
-    products.map((section)=>{
-        return (
-            <>
-                <h3>{section.name}</h3>
+    return ( products.map((section)=>{
+
+        console.log(section.list)
+            return (
                 <>
-                    <button poner onclick>▽</button>
-                    <ShowList key={section.id} list={products.list}/>
+                    <>
+                        <h3>{section.name}</h3>
+                        <button >▽ icono para ampliar seccion</button>
+                    </>
+                    <ShowList key={section.list[0]} list={section.list}/>
                     {/* <ShowList products={products} /> segunda forma de pasar data por parámetro al componente hijo*/}
                 </>
-            </>
-        )
-    }
+            )
+        })
     )
 }
+// hasta esta linea funciona el componente!!!

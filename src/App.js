@@ -2,7 +2,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import { EstadosPorEfectos } from './components/ItemCount';
-import products from './components/products.json';
+// import products from './components/products.json';
 import { ShowSection } from './components/show-products/ShowSection';
 
 
@@ -21,7 +21,7 @@ function App() {
       
       <ItemListContainer style={h2Style} greeting={"Hola!!! buenos días!! Bienvenido a nuestro E-Comosano!!"}/>
       <EstadosPorEfectos/>
-      <ShowSection key={products.id} />
+      <ShowSection />
 
     </>
   );
