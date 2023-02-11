@@ -5,12 +5,14 @@ console.log(productsDB)
 
 //Este componente agrupa las 7 categorías. Componente PADRE
 export const ItemListContainer = (props)=>{
+    console.log(productsDB)
+    let [products,setProducts] = useState(productsDB);
+    // let actualizar = (db)=>{return setProducts(db)}
+    // actualizar(productsDB).
 
-    let [products,setProducts] = useState({productsDB});
-    let actualizar = (db)=>{return setProducts(db)}
-    actualizar(productsDB)
 
-    //el problema debe estar acá ignorando tal vez como es el funcionamiento exacto de los hooks sin enviarme la data al return cuando hago el products.mat(()=>{retorno una categoría entera para luego entregar la misma data a un componente ItemLis que renderizará productos individuales})
+
+    //Solucionado con eliminar las llaves pasadas como parámetro en productsDb ya que es un objeto y no hacía falta convertirlo otra vez en objeto?
 
 // console.log(products)
     return (
@@ -20,7 +22,7 @@ export const ItemListContainer = (props)=>{
             {products.map((categoryList)=>{
             console.log(categoryList.list)
                 return (
-                    <>
+                    <div key = {categoryList.id}>
                         <p>Comp ItemListContainer</p>
                         <>
                             <h3>{categoryList.name}</h3>
@@ -28,10 +30,9 @@ export const ItemListContainer = (props)=>{
                         </>
                         <ItemList key={categoryList.id} products={categoryList}/>
 
-                    </>
+                    </div>
                 )
             })}    
         </>
     )        
 };
-
