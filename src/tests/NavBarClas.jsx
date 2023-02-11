@@ -3,7 +3,7 @@ import './NavBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmarkSquare } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import CartWidget from './CartWidget';
+import CartWidget from '../components/CartWidget';
 import Logo from '../images/logo.png';
 import LogoWhite from '../images/logoWhite.png';
 

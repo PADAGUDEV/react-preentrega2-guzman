@@ -1,13 +1,12 @@
 import { ItemDetail } from './ItemDetail.jsx';
 
-export const ItemDetailContainer = () => {
+// HIJO 1-3
+export const ItemDetailContainer = ({product}) => {
+    
     return (
         <>
-            <div>
-                <h4>{product.name}</h4>
-                <p>{product.desc}</p>
-            </div>
-            
+            <p>Comp ItemDetailContainer</p>
+            <ItemDetail product={product} />
         </>
     )
-}
+};

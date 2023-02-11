@@ -1,31 +1,39 @@
 [
     {
-        "id":"flours",
+        "id":1001,
         "name":"HARINA DE MAIZ Y VARIOS",
         "list":[
             {
-                "id":1,
+                "id":11,
                 "name":"Cosaco",
                 "img":"images/",
                 "desc":"Harina Cosaco la mejor venta por paquete de 1kg.",
+                "unit":"kg",
+                "stock":10,
                 "price":550},
             {
                 "id":2,
                 "name":"Morixe",
                 "img":"images/",
                 "desc":"Harina Morixe por kilo paquete................",
+                "unit":"kg",
+                "stock":100,
                 "price":440},
             {
                 "id":3,
                 "name":"Harina Pan",
                 "img":"images/",
                 "desc":"Harina Pan por paquete de 1 kilogramo ................",
+                "unit":"kg",
+                "stock":100,
                 "price":480},
             {
                 "id":4,
                 "name":"Arcor Presto Pronto",
                 "img":"images/",
                 "desc":"Harina ................",
+                "unit":"kg",
+                "stock":100,
                 "price":370
             },
             {
@@ -33,6 +41,8 @@
                 "name":"Nieve",
                 "img":"images/",
                 "desc":"Harina ................",
+                "unit":"kg",
+                "stock":100,
                 "price":370
             },
             {
@@ -40,6 +50,8 @@
                 "name":"Mezcla de cachapas",
                 "img":"images/",
                 "desc":"Harina ................",
+                "unit":"kg",
+                "stock":100,
                 "price":370
             },
             {
@@ -47,6 +59,8 @@
                 "name":"Aji dulce",
                 "img":"images/",
                 "desc":"Harina ................",
+                "unit":"kg",
+                "stock":100,
                 "price":900
             },
             {
@@ -54,6 +68,8 @@
                 "name":"Yuca",
                 "img":"images/",
                 "desc":"Harina ................",
+                "unit":"kg",
+                "stock":100,
                 "price":250
             },
             {
@@ -61,12 +77,14 @@
                 "name":"Ocumo",
                 "img":"images/",
                 "desc":"Harina ................",
+                "unit":"kg",
+                "stock":100,
                 "price":1200
             }
         ]
     },
     {
-        "id":"fruits",
+        "id":1002,
         "name":"FRUTAS",
         "list":[
             {
@@ -74,18 +92,22 @@
                 "name":"Plátano",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"kg",
+                "stock":100,
                 "price":1200},
             {
                 "id":11,
                 "name":"Mango",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"kg",
+                "stock":100,
                 "price":2000
             }
         ]
     },
     {
-        "id":"cheeses",
+        "id":1003,
         "name":"QUESOS",
         "list":[
             {
@@ -93,6 +115,8 @@
                 "name":"Semiduro tovareño",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"kg",
+                "stock":100,
                 "price":1420
             },
             {
@@ -100,6 +124,8 @@
                 "name":"Duro tovareño",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"kg",
+                "stock":100,
                 "price":1620
             },
             {
@@ -107,6 +133,8 @@
                 "name":"De mano la zuliana x 425Grs.",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"kg",
+                "stock":100,
                 "price":1100
             },
             {
@@ -114,12 +142,14 @@
                 "name":"Queso añejo x 100Grs.",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"kg",
+                "stock":100,
                 "price":450
             }
         ]
     },
     {
-        "id":"sauces-creams",
+        "id":1004,
         "name":"SALSAS Y CREMAS",
         "list":[
             {
@@ -127,6 +157,8 @@
                 "name":"Cheez Whix",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"kg",
+                "stock":100,
                 "price":1250
             },
             {
@@ -134,6 +166,8 @@
                 "name":"Nata Zuliana Gr.",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"kg",
+                "stock":100,
                 "price":520
             },
             {
@@ -141,6 +175,8 @@
                 "name":"Nati Rica Gr",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":520
                 },
             {
@@ -148,6 +184,8 @@
                 "name":"Nati Rica Peq",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":420
             },
             {
@@ -155,6 +193,8 @@
                 "name":"Suero",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"kg",
+                "stock":100,
                 "price":450
             },
             {
@@ -162,6 +202,8 @@
                 "name":"Guasacaca x 300cc",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":500
             },
             {
@@ -169,6 +211,8 @@
                 "name":"Salsa Inglesa",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":250
             },
             {
@@ -176,6 +220,8 @@
                 "name":"Salsa de Soja",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":250
             },
             {
@@ -183,6 +229,8 @@
                 "name":"Salsa de Ajo",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":155
             },
             {
@@ -190,6 +238,8 @@
                 "name":"Adobo Sazón",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":280
             },
             {
@@ -197,6 +247,8 @@
                 "name":"Ajo en polvo",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":100
             },
             {
@@ -204,6 +256,8 @@
                 "name":"Anis en grano",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"kg",
+                "stock":100,
                 "price":100
             },
             {
@@ -211,6 +265,8 @@
                 "name":"Vainil",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":100
             },
             {
@@ -218,6 +274,8 @@
                 "name":"Salsa Tártara tovareño",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":500
             },
             {
@@ -225,12 +283,14 @@
                 "name":"Mantequilla Dánica",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":200
             }
         ]
     },
     {
-        "id":"drinks",
+        "id":1005,
         "name":"BEBIDAS Y MÁS",
         "list":[
             {   
@@ -238,6 +298,8 @@
                 "name":"Tamarindo",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":2000
             },
             {
@@ -245,6 +307,8 @@
                 "name":"Grand Old Parr",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":6000
             },
             {
@@ -252,6 +316,8 @@
                 "name":"Malta 58cc",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":290
             },
             {
@@ -259,6 +325,8 @@
                 "name":"Rekolita",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":170
             },
             {
@@ -266,6 +334,8 @@
                 "name":"Rekopiña",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":170
             },
             {
@@ -273,6 +343,8 @@
                 "name":"Breez de durazno 1kg",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"kg",
+                "stock":100,
                 "price":1500
             },
             {
@@ -280,6 +352,8 @@
                 "name":"Pops Tea 1kg",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"kg",
+                "stock":100,
                 "price":1500
             },
             {
@@ -287,6 +361,8 @@
                 "name":"Ron Gran Reserva",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":6200
             },
             {
@@ -294,6 +370,8 @@
                 "name":"Botran 18",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":10900
             },
             {
@@ -301,6 +379,8 @@
                 "name":"Botran 15",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":7900
             },
             {
@@ -308,6 +388,8 @@
                 "name":"Anis 8 hermanos",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":950
             },
             {
@@ -315,6 +397,8 @@
                 "name":"Ron 1796",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"kg",
+                "stock":100,
                 "price":16000
             },
             {
@@ -322,6 +406,8 @@
                 "name":"Diplomático Mantuano",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":9500
             },
             {
@@ -329,6 +415,8 @@
                 "name":"Diplomático reserva exclusiva",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":14000
             },
             {
@@ -336,6 +424,8 @@
                 "name":"Pulpa de Guanabana 500grs.",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":1000
             },
             {
@@ -343,6 +433,8 @@
                 "name":"Leche de Coco",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":350
             },
             {
@@ -350,6 +442,8 @@
                 "name":"Leche de almendras",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":380
             },
             {
@@ -357,6 +451,8 @@
                 "name":"Leche entera polvo 800grs.",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":1000
             },
             {
@@ -364,6 +460,8 @@
                 "name":"Papelón granulado 500grs.",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":400
             },
             {
@@ -371,12 +469,14 @@
                 "name":"Papelón Panela 300grs.",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":400
             }
         ]
     },
     {
-        "id":"candies",
+        "id":1006,
         "name":"GOLOSINAS",
         "list":[
             {   
@@ -384,6 +484,8 @@
                 "name":"Obleas grandes",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":590
             },
             {
@@ -391,12 +493,14 @@
                 "name":"Obleas pequeñas",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":350
             }
         ]
     },
     {
-        "id":"several",
+        "id":1007,
         "name":"VARIOS",
         "list":[
             {   
@@ -404,6 +508,8 @@
                 "name":"Pan arabe Gr.700grs.",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":400
             },
             {
@@ -411,6 +517,8 @@
                 "name":"Pan arabe Peq.500grs.",
                 "img":"images/",
                 "desc":"---------------------",
+                "unit":"unid",
+                "stock":100,
                 "price":300
             }
         ]
