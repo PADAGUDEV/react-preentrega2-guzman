@@ -1,4 +1,4 @@
-import { ItemDetailContainer } from "./ItemDetailContainer.jsx";
+import { ItemDetailContainer } from "../ItemDetailContainer";
 
 // este componente contiene unicamente la parte de título de props, desde que precio parte y foto miniatura , luego oculto con estilos se anida el ItemDetailContainer
 

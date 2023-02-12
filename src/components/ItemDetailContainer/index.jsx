@@ -1,4 +1,4 @@
-import { ItemDetail } from './ItemDetail.jsx';
+import { ItemDetail } from '../ItemDetail';
 
 // HIJO 1-3
 export const ItemDetailContainer = ({product}) => {
