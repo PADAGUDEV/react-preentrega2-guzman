@@ -1,3 +1,4 @@
+import { Link , useParams } from "react-router-dom";
 import { ItemDetailContainer } from "../ItemDetailContainer";
 
 // este componente contiene unicamente la parte de título de props, desde que precio parte y foto miniatura , luego oculto con estilos se anida el ItemDetailContainer
@@ -6,14 +7,18 @@ import { ItemDetailContainer } from "../ItemDetailContainer";
 export const Item = ({product}) => {
     return (
         <>
-            <div>
-                <p>Comp Item</p>
-                <button>▽Icono para expandir</button>
-                <h4>{product.name}</h4>
-                <p>Desde ${product.price}</p>
-                <img src={product.img} alt="imgMini" />
-            </div>
-            <ItemDetailContainer product={product}  />
+            <Link to={`/item/${product.id}`}>
+                <div>
+                    <p>Comp Item</p>
+                    <h4>{product.name}</h4>
+                    {/* <button>▽Icono para expandir</button> */}
+                    
+                    <p>Desde ${product.price}</p>
+                    <img src={product.img} alt="imgMini" />
+                </div> 
+            </Link>
+
+            {/* <ItemDetailContainer product={product}  /> */}
         </>
     )
 };

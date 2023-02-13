@@ -1,4 +1,4 @@
-import { ItemListContainer } from '../ItemListContainer/index.jsx';
+import { ItemListContainer } from '../../ItemListContainer';
 
 export const ProductsList = () => {
     return (
