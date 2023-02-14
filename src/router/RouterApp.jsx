@@ -7,7 +7,7 @@ import { Stores } from "../components/views/Stores";
 import { ToBuy } from "../components/views/ToBuy";
 import { Error404 } from "../components/views/Error404";
 import { ItemListContainer } from "../components/ItemListContainer";
-import { ItemDetailContainer } from "../components/ItemDetailContainer";
+// import { ItemDetailContainer } from "../components/ItemDetailContainer";
 
 export const RouterApp = () => {
     return (
@@ -16,7 +16,7 @@ export const RouterApp = () => {
                 <Route path="/aboutus"              element={<AboutUs />}></Route>
                 <Route path="/"                     element={<ItemListContainer />}></Route>
                 <Route path="/category/:categoryId" element={<ItemListContainer />}></Route>
-                <Route path="/item/:productId"             element={<ItemDetailContainer />}></Route>
+                {/* <Route path="/item/:productId"             element={<ItemDetailContainer />}></Route> */}
                 <Route path="/productslist"         element={<ProductsList/>}></Route>
                 <Route path="/stores"               element={<Stores />}></Route>
                 <Route path="/tobuy"                element={<ToBuy />}></Route>

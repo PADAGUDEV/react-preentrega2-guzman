@@ -1,81 +1,62 @@
 import { useState , useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import productsDB from '../productsDB.json';
 import { ItemList } from '../ItemList';
 import { useParams } from "react-router-dom";
+import { getFetch } from '../../helpers/mock';
 
 //Este componente agrupa las 7 categorías. Componente PADRE
 export const ItemListContainer = (props)=>{
-
-      //estuvimos horas y al pasar un array vacío funcionó, hay que aclarar que se espera un array vacío, ya que si pasamos un objeto utiliza eso, sino espera un array de dependencias
-    
-    const {categoryId} = useParams();
+console.log(getFetch)
+    const {categ} = useParams();
 
     const [categories, setCategories] = useState([]);
+    const [loading,setLoading] = useState(true);
 
-    const promesa = new Promise((resolve, reject)=>{
-        setTimeout(() => {
-            resolve(productsDB);
-        }, 2000);
-    })
+    useEffect(() => {
+        if (categ) {
+            getFetch
+            .then((prods) => {
+                setCategories(
+                    prods.filter((productos) => productos.categ === categ)
+                );
+                setLoading(false);
+            })
+            .catch((err) =>
+                console.log(`error en traer los productos ${err}`
+                )
+            );
+        } else {
+            getFetch
+                .then((prods) => {
+                    setCategories(prods);
+                    setLoading(false);
+                })
+                .catch((err) =>
+                console.log(`error en traer los prods ${err}`)
+                );
 
-    useEffect(()=>{
-        promesa.then(resultado=>{
-            console.log(categoryId)
-            if(!categoryId){
-                setCategories(resultado)
-            } else{
-                const nuevaLista = resultado.filter(item=>item.categ === categoryId);
-                setCategories(nuevaLista)
-                // console.log(nuevaLista)
-            }
-        })
-    },[categoryId])
+        }
+    }, [categ]);
 
-    // const renderListMatchId = () => {
-        
-    // }
-
-    return(
-        <div className="item-list-container">
-            <p>item list container</p>
-            {console.log(categoryId)}
-            {/* {console.log(categories[1])} */}
+    return (
+        <div>
+            <p>item list containers</p>
             <ul>
-                {categories.map((category)=>{
+                {categories.map((category) =>{
                     return (
-                        <li key = {category.id}>
-                            <>                                
-                                <Link to={`/category/${category.categ}`}>
-                                    <h3>{category.title}</h3>
-                                </Link>
-                            </>                            
-                            {categoryId === category.categ ? <ItemList productsList={category}/> : ""}
+                        <li key={category.id}>
+                            <>
+                            <Link to={`/item/${category.id}`}>
+                                <h3>{category.nam}</h3>
+                            </Link>
+                            </>
+
+                            {categ === category.categ ? <ItemList productsList={category}/> : ""}
                         </li>
                     )
                 })}
             </ul>
         </div>
     )
-}
-//     return (
-//         <>
-//             <h2 style={props.style}>{props.greeting}</h2>
-//             <ul>
-//                 {categories.map((category)=>{
-//                     return (
-//                         <li key = {category.id}>  {/*la key es sobre el contenedor*/}
-//                             {/* <p>Comp ItemListContainer</p> */}
-//                             <>                                
-//                                 <Link to={`/category/${category.id}`}>
-//                                     <h3>{category.name}</h3>
-//                                 </Link>
-//                             </>
-//                             <ItemList products={category}/>
-//                         </li>
-//                     )
-//                 })}
-//             </ul>
-//         </>
-//     )        
-// };
+
+};
