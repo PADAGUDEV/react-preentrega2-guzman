@@ -1,62 +1,55 @@
 import { useState , useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import arrayjson from '../../helpers/arrayjson.json';
 import { ItemList } from '../ItemList';
 import { useParams } from "react-router-dom";
-import { getFetch } from '../../helpers/mock';
 
 //Este componente agrupa las 7 categorías. Componente PADRE
 export const ItemListContainer = (props)=>{
-console.log(getFetch)
-    const {categ} = useParams();
+
+      //pasar un array vacío funcionó en useState, ya que si pasamos un objeto utiliza eso, sino espera un array de dependencias
+    
+    const {categoryId} = useParams();
 
     const [categories, setCategories] = useState([]);
-    const [loading,setLoading] = useState(true);
 
-    useEffect(() => {
-        if (categ) {
-            getFetch
-            .then((prods) => {
-                setCategories(
-                    prods.filter((productos) => productos.categ === categ)
-                );
-                setLoading(false);
-            })
-            .catch((err) =>
-                console.log(`error en traer los productos ${err}`
-                )
-            );
-        } else {
-            getFetch
-                .then((prods) => {
-                    setCategories(prods);
-                    setLoading(false);
-                })
-                .catch((err) =>
-                console.log(`error en traer los prods ${err}`)
-                );
+    const promesa = new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            resolve(arrayjson);
+        }, 2000);
+    })
 
-        }
-    }, [categ]);
+    useEffect(()=>{
+        promesa.then(resultado=>{
+            console.log(categoryId)
+            if(!categoryId){
+                setCategories(resultado)
+            } else{
+                const nuevaLista = resultado.filter(item=>item.categ === categoryId);
+                setCategories(nuevaLista)
+                // console.log(nuevaLista)
+            }
+        })
+    },[categoryId])
 
-    return (
-        <div>
-            <p>item list containers</p>
+    return(
+        <div className="item-list-container">
+            <h2 style={props.style}>{props.greeting}</h2>
+            {console.log(categoryId)}
             <ul>
-                {categories.map((category) =>{
+                {categories.map((category)=>{
                     return (
-                        <li key={category.id}>
+                        <li key = {category.id}>
                             <>
-                            <Link to={`/item/${category.id}`}>
-                                <h3>{category.nam}</h3>
-                            </Link>
+                                <Link to={`/category/${category.categ}`}>
+                                    <h3>{category.title}</h3>
+                                </Link>
                             </>
-
-                            {categ === category.categ ? <ItemList productsList={category}/> : ""}
+                            {categoryId === category.categ ? <ItemList productsList={category}/> : ""}
                         </li>
                     )
                 })}
             </ul>
         </div>
     )
-
-};
+}
