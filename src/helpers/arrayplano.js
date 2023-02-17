@@ -8,7 +8,7 @@ import varios from "../images/varios.jpg";
 
 export const arrayplano = [
     {
-        categ:"flours",
+        categ:"harinas",
         title:"HARINA DE MAIZ Y VARIOS",
         id:11,
         name:"Cosaco",
@@ -19,7 +19,7 @@ export const arrayplano = [
         price:550
     },
     {
-        categ:"flours",
+        categ:"harinas",
         title:"HARINA DE MAIZ Y VARIOS",
         id:2,
         name:"Morixe",
@@ -30,7 +30,7 @@ export const arrayplano = [
         price:440
     },
     {
-        categ:"flours",
+        categ:"harinas",
         title:"HARINA DE MAIZ Y VARIOS",
         id:3,
         name:"Harina Pan",
@@ -41,7 +41,7 @@ export const arrayplano = [
         price:480
     },
     {
-        categ:"flours",
+        categ:"harinas",
         title:"HARINA DE MAIZ Y VARIOS",
         id:4,
         name:"Arcor Presto Pronto",
@@ -52,7 +52,7 @@ export const arrayplano = [
         price:370
     },
     {
-        categ:"flours",
+        categ:"harinas",
         title:"HARINA DE MAIZ Y VARIOS",
         id:5,
         name:"Nieve",
@@ -63,7 +63,7 @@ export const arrayplano = [
         price:370
     },
     {
-        categ:"flours",
+        categ:"harinas",
         title:"HARINA DE MAIZ Y VARIOS",
         id:6,
         name:"Mezcla de cachapas",
@@ -74,7 +74,7 @@ export const arrayplano = [
         price:370
     },
     {
-        categ:"flours",
+        categ:"harinas",
         title:"HARINA DE MAIZ Y VARIOS",
         id:7,
         name:"Aji dulce",
@@ -85,7 +85,7 @@ export const arrayplano = [
         price:900
     },
     {
-        categ:"flours",
+        categ:"harinas",
         title:"HARINA DE MAIZ Y VARIOS",
         id:8,
         name:"Yuca",
@@ -96,7 +96,7 @@ export const arrayplano = [
         price:250
     },
     {
-        categ:"flours",
+        categ:"harinas",
         title:"HARINA DE MAIZ Y VARIOS",
         id:9,
         name:"Ocumo",
@@ -109,7 +109,7 @@ export const arrayplano = [
 
     {
         title:"FRUTAS",
-        categ:"fruits",
+        categ:"frutas",
         id:10,
         name:"Plátano",
         img:frutas,
@@ -120,7 +120,7 @@ export const arrayplano = [
     },
     {
         title:"FRUTAS",
-        categ:"fruits",
+        categ:"frutas",
         id:1111,
         name:"Mango",
         img:frutas,
@@ -131,7 +131,7 @@ export const arrayplano = [
     },
     {   
         title:"QUESOS",
-        categ:"cheeses",
+        categ:"quesos",
         id:12,
         name:"Semiduro tovareño",
         img:quesos,
@@ -142,7 +142,7 @@ export const arrayplano = [
     },
     {   
         title:"QUESOS",
-        categ:"cheeses",
+        categ:"quesos",
         id:13,
         name:"Duro tovareño",
         img:quesos,
@@ -153,7 +153,7 @@ export const arrayplano = [
     },
     {   
         title:"QUESOS",
-        categ:"cheeses",
+        categ:"quesos",
         id:14,
         name:"De mano la zuliana x 425Grs.",
         img:quesos,
@@ -164,7 +164,7 @@ export const arrayplano = [
     },
     {   
         title:"QUESOS",
-        categ:"cheeses",
+        categ:"quesos",
         id:15,
         name:"Queso añejo x 100Grs.",
         img:quesos,
@@ -175,7 +175,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:16,
         name:"Cheez Whix",
         img:salsas,
@@ -186,7 +186,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:17,
         name:"Nata Zuliana Gr.",
         img:salsas,
@@ -197,7 +197,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:18,
         name:"Nati Rica Gr",
         img:salsas,
@@ -208,7 +208,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:19,
         name:"Nati Rica Peq",
         img:salsas,
@@ -219,7 +219,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:20,
         name:"Suero",
         img:salsas,
@@ -230,7 +230,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:21,
         name:"Guasacaca x 300cc",
         img:salsas,
@@ -241,7 +241,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:22,
         name:"Salsa Inglesa",
         img:salsas,
@@ -252,7 +252,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:23,
         name:"Salsa de Soja",
         img:salsas,
@@ -263,7 +263,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:24,
         name:"Salsa de Ajo",
         img:salsas,
@@ -274,7 +274,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:25,
         name:"Adobo Sazón",
         img:salsas,
@@ -285,7 +285,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:26,
         name:"Ajo en polvo",
         img:salsas,
@@ -296,7 +296,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:27,
         name:"Anis en grano",
         img:salsas,
@@ -307,7 +307,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:28,
         name:"Vainil",
         img:salsas,
@@ -318,7 +318,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:29,
         name:"Salsa Tártara tovareño",
         img:salsas,
@@ -329,7 +329,7 @@ export const arrayplano = [
     },
     {
         title:"SALSAS Y CREMAS",
-        categ:"soucescreams",
+        categ:"salsas_y_cremas",
         id:30,
         name:"Mantequilla Dánica",
         img:salsas,
@@ -340,7 +340,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:31,
         name:"Tamarindo",
         img:bebidas,
@@ -351,7 +351,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:32,
         name:"Grand Old Parr",
         img:bebidas,
@@ -362,7 +362,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:33,
         name:"Malta 58cc",
         img:bebidas,
@@ -373,7 +373,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:34,
         name:"Rekolita",
         img:bebidas,
@@ -384,7 +384,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:35,
         name:"Rekopiña",
         img:bebidas,
@@ -395,7 +395,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:36,
         name:"Breez de durazno 1kg",
         img:bebidas,
@@ -406,7 +406,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:37,
         name:"Pops Tea 1kg",
         img:bebidas,
@@ -417,7 +417,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:38,
         name:"Ron Gran Reserva",
         img:bebidas,
@@ -428,7 +428,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:39,
         name:"Botran 18",
         img:bebidas,
@@ -439,7 +439,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:40,
         name:"Botran 15",
         img:bebidas,
@@ -450,7 +450,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:41,
         name:"Anis 8 hermanos",
         img:bebidas,
@@ -461,7 +461,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:42,
         name:"Ron 1796",
         img:bebidas,
@@ -472,7 +472,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:43,
         name:"Diplomático Mantuano",
         img:bebidas,
@@ -483,7 +483,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:44,
         name:"Diplomático reserva exclusiva",
         img:bebidas,
@@ -494,7 +494,7 @@ export const arrayplano = [
     },
     {
         title: "BEBIDAS Y MÁS",
-        categ:"drinks",
+        categ:"bebidas",
         id:45,
         name:"Pulpa de Guanabana 500grs.",
         img:bebidas,
@@ -505,7 +505,7 @@ export const arrayplano = [
     },
     {   
         title: "GOLOSINAS",
-        categ:"candies",
+        categ:"golosinas",
         id:51,
         name:"Obleas grandes",
         img:golosinas,
@@ -516,7 +516,7 @@ export const arrayplano = [
     },
     {
         title: "GOLOSINAS",
-        categ:"candies",
+        categ:"golosinas",
         id:52,
         name:"Obleas pequeñas",
         img:golosinas,
@@ -527,7 +527,7 @@ export const arrayplano = [
     },
     {   
         title:"VARIOS",
-        categ:"more",
+        categ:"varios",
         id:53,
         name:"Pan arabe Gr.700grs.",
         img:varios,
@@ -538,7 +538,7 @@ export const arrayplano = [
     },
     {
         title:"VARIOS",
-        categ:"more",
+        categ:"varios",
         id:54,
         name:"Pan arabe Peq.500grs.",
         img:varios,

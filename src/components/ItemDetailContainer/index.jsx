@@ -1,4 +1,5 @@
 import {arrayplano} from '../../helpers/arrayplano';
+import './index.css';
 import { useEffect , useState } from 'react';
 import { useParams } from 'react-router-dom';//cuidado que retorna numeros en strings
 import { ItemDetail } from '../ItemDetail';
@@ -30,7 +31,7 @@ console.log(productId)
         <>
         {console.log(item)}
             <h2>{item.title}</h2>
-            <img src={`../../images/${item.img}.jpg`} alt={item.img} />
+            <img className='img-detail' src={item.img} alt={item.img} />
             <p>{item.name}</p>
             <ItemDetail product={item} />
         </>
