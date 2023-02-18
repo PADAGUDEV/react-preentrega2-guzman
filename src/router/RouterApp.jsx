@@ -1,7 +1,5 @@
 import { Routes , Route } from "react-router-dom";
 import { AboutUs} from "../components/views/AboutUs";
-// import { Home } from "../components/views/Home";
-// import { Item } from "../components/Item";
 import { ProductsList } from "../components/views/ProductList";
 import { Stores } from "../components/views/Stores";
 import { ToBuy } from "../components/views/ToBuy";
@@ -16,7 +14,7 @@ export const RouterApp = () => {
                 <Route path="/aboutus"              element={<AboutUs />}></Route>
                 <Route path="/"                     element={<ItemListContainer />}></Route>
                 <Route path="/category/:categoryId" element={<ItemListContainer />}></Route>
-                <Route path="/item/:productId"   element={<ItemDetailContainer />}></Route>
+                <Route path="/item/:productId"      element={<ItemDetailContainer />}></Route>
                 <Route path="/productslist"         element={<ProductsList/>}></Route>
                 <Route path="/stores"               element={<Stores />}></Route>
                 <Route path="/tobuy"                element={<ToBuy />}></Route>

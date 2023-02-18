@@ -17,10 +17,8 @@ export const ItemListContainer = (props)=>{
     })
 
     useEffect(()=>{
-        promesa.then(resultado=>{
-            
-            if(!categoryId){
-                
+        promesa.then(resultado=>{            
+            if(!categoryId){                
                 setCategories(resultado)
             } else{
                 // console.log(resultado)
@@ -35,84 +33,85 @@ export const ItemListContainer = (props)=>{
         <div className="item-list-container">
             <h2 style={props.style}>{props.greeting}</h2>
             {console.log(categoryId)}
-            <>
-                <Link to={'/category/harinas'}>HARINAS DE MAIZ Y VARIOS</Link>
-                <ul>
-                    {categories.map((category)=>{
-                        return (
-                            <>
-                                {categoryId === category.categ ? <ItemList productsList={category}/> : ""}
-                            </>
-                        )
-                    })}
-                </ul>
+            
+            <Link to={'/category/harinas'}>HARINAS DE MAIZ Y VARIOS</Link>
+            <ul>
+                {categoryId==="harinas"? categories.map((category)=>{
+                    //la key unicamente la puedo establecer donde etá el .map() no dentro del componente ItemList
+                    return ( 
+                        <li key={category.id}>  
+                            <ItemList productsList={category}/>
+                        </li>
+                    )
+                }):""}
+            </ul>
 
-                <Link to={'/category/frutas'}>FRUTAS</Link>
-                <ul>
-                    {categories.map((category)=>{
-                        return (
-                            <>
-                                {categoryId === category.categ ? <ItemList productsList={category}/> : ""}
-                            </>
-                        )
-                    })}
-                </ul>
+            <Link to={'/category/frutas'}>FRUTAS</Link>
+            <ul>
+                {categoryId==="frutas"?categories.map((category)=>{
+                    return (                            
+                        <li key={category.id}>
+                            <ItemList productsList={category}/>
+                        </li>                        
+                    )
+                }):""}
+            </ul>
 
-                <Link to={'/category/quesos'}>QUESOS</Link>
-                <ul>
-                    {categories.map((category)=>{
-                        return (
-                            <>
-                                {categoryId === category.categ ? <ItemList productsList={category}/> : ""}
-                            </>
-                        )
-                    })}
-                </ul>
+            <Link to={'/category/quesos'}>QUESOS</Link>
+            <ul>
+                {categoryId==="quesos"?categories.map((category)=>{
+                    return (
+                        <li key={category.id}>
+                            <ItemList productsList={category}/>
+                        </li>
+                    )
+                }):""}
+            </ul>
 
-                <Link to={'/category/salsas_y_cremas'}>SALSAS Y CREMAS</Link>
-                <ul>
-                    {categories.map((category)=>{
-                        return (
-                            <>
-                                {categoryId === category.categ ? <ItemList productsList={category}/> : ""}
-                            </>
-                        )
-                    })}
-                </ul>
+            <Link to={'/category/salsas_y_cremas'}>SALSAS Y CREMAS</Link>
+            <ul>
+                {categoryId==="salsas_y_cremas"?categories.map((category)=>{
+                    return (
+                        <li key={category.id}>
+                            <ItemList productsList={category}/>
+                        </li>
+                    )
+                }):""}
+            </ul>
 
-                <Link to={'/category/bebidas'}>BEBIDAS Y MÁS</Link>
-                <ul>
-                    {categories.map((category)=>{
-                        return (
-                            <>
-                                {categoryId === category.categ ? <ItemList productsList={category}/> : ""}
-                            </>
-                        )
-                    })}
-                </ul>
+            <Link to={'/category/bebidas'}>BEBIDAS Y MÁS</Link>
+            <ul>
+                {categoryId==="bebidas"?categories.map((category)=>{
+                    return (
+                        <li key={category.id}>
+                            <ItemList productsList={category}/>
+                        </li>
+                    )
+                }):""}
+            </ul>
 
-                <Link to={'/category/golosinas'}>GOLOSINAS</Link>
-                <ul>
-                    {categories.map((category)=>{
-                        return (
-                            <>
-                                {categoryId === category.categ ? <ItemList productsList={category}/> : ""}
-                            </>
-                        )
-                    })}
-                </ul>
+            <Link to={'/category/golosinas'}>GOLOSINAS</Link>
+            <ul>
+                {categoryId==="golosinas"?categories.map((category)=>{
+                    return (
+                        <li key={category.id}>
+                            <ItemList productsList={category}/>
+                        </li>
+                    )
+                }):""}
+            </ul>
 
-                <Link to={'/category/varios'}>VARIOS</Link>
-                <ul>
-                    {categories.map((category)=>{
-                        return (
-                            <>
-                                {categoryId === category.categ ? <ItemList productsList={category}/> : ""}
-                            </>
-                        )
-                    })}
-                </ul>
-            </>
+            <Link to={'/category/varios'}>VARIOS</Link>
+            <ul>
+                {categoryId==="varios"?categories.map((category)=>{
+                    return (
+                        <li key={category.id}>
+                            <ItemList productsList={category}/>
+                        </li>
+                    )
+                }):""}
+            </ul>
+            
         </div>
     )
 };
